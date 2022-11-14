@@ -1,4 +1,4 @@
-// Прелоадер
+// Preloader
 
 window.onload = function () {
     window.setTimeout(function () {
@@ -8,7 +8,7 @@ window.onload = function () {
     }, 5000);
   };
 
-// неактивність користувача
+// Users noactivity
 
 let noactiveTime=function(){
     let time;
@@ -56,7 +56,7 @@ noactiveTime();
 
 
 
-// меню бургер
+// Menu burger
 
 const menuBtn = document.querySelector('.header__btn');
 const menu = document.querySelector('.header__menu');
@@ -65,7 +65,7 @@ menuBtn.addEventListener('click', function(){
 	menu.classList.toggle('active');
 });
 
-// Перемикач тем
+// Change theme
 
 let date=new Date();
 let hour=date.getHours();
@@ -88,7 +88,7 @@ changeTheme.addEventListener('click', function (){
 
 
 
-  // Прогрес бар
+  // Progress bar
 
   const progressBar=document.querySelector('.progress');
   window.addEventListener('scroll', progress);
@@ -318,7 +318,7 @@ function latestProjects(){
 };
 
 
- // Плавна поява блоків при переході на секцію blog
+ // Animation
 
 
  const animBlocks=document.querySelectorAll('.blog__content');
@@ -351,7 +351,7 @@ function latestProjects(){
  }
 
 
-  // show all (blog) безкінечний скрол 
+  // Show all (blog) scroll
 
  let button=document.querySelector('.blog__browseall button');
  let blogItems=document.querySelector('.blog__content');
@@ -367,7 +367,7 @@ button.addEventListener('click', function(){
 
     
 
-// Форма
+// Form
 
 const form=document.querySelector('.form');
 const nameInput=document.querySelector('#name');
@@ -414,7 +414,7 @@ form.addEventListener('submit',function(event){
   
 )
 
-// Віджет погода 
+// Widget weather
 
 const weatherBlock=document.querySelector('#weather');
 async function loadWeather (e){
